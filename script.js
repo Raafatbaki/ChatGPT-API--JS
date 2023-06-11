@@ -2,8 +2,6 @@ document.getElementById("submit-btn").addEventListener("click", function () {
   sendToChatGPT();
 });
 
-//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
-
 function sendToChatGPT() {
   let value = document.getElementById("word-input").value;
   let body = {
@@ -14,7 +12,6 @@ function sendToChatGPT() {
   let headers = {
     Authorization: "Bearer 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",
   };
-
   axios
     .post("https://api.openai.com/v1/chat/completions", body, {
       headers: headers,
